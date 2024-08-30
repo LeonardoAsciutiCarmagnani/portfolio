@@ -37,7 +37,7 @@ export default function CardProject({ tags, description, name, image }: CardProj
       };
 
     return(
-        <div className="flex flex-col items-center justify-evenly w-[27rem] h-[33rem] bg-orange-100 rounded-md border-orange-400 border-[0.166rem] shadow-sm shadow-orange-500 gap-2">
+        <div className="flex flex-col items-center justify-evenly w-[23rem] h-[32rem] bg-orange-100 rounded-md border-orange-400 border-[0.166rem] shadow-sm shadow-orange-500 gap-2 flex-1">
             <div className="flex flex-row items-center justify-center pb-1 w-full border-b-[0.05rem] border-gray-400 text-center bg-orange-300">
             <h3 className="font-semibold flex">{name}</h3>    
             </div>
@@ -45,7 +45,7 @@ export default function CardProject({ tags, description, name, image }: CardProj
                <img src={image} />
             </div>
             <div>
-                <div className="flex w-full gap-2 p-2 rounded-b-md items-center justify-center">
+                <div className="flex w-full gap-2 p-2 rounded-b-md items-center justify-center flex-wrap">
                 {tags.map((tag,index)=>{
                     const bgColorClass = colorTags[tag];
                    

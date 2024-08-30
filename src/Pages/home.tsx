@@ -14,13 +14,20 @@ import logo_multipoint from "../assets/multi.jpeg"
 import logo_google from "../assets/google.png"
 import { FaExternalLinkAlt } from "react-icons/fa";
 import CardProject from "../Components/cardProjects";
+import whiteground from "../assets/whiteground.svg"
+import blackground from "../assets/background.svg"
+import imgProject from "../assets/GeradorXML.png"
+
 
 export default function Home(){
 
     const { theme } = useTheme()
+    const {} = useTheme()
 
     return(
-    <div className='bg-[url(src/assets/whiteground.svg)] dark:bg-[url(src/assets/background.svg)]'>            
+    <div className='h-full' style={{ backgroundImage: `url(${theme === 'dark' ? blackground : whiteground})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover', }}>            
         <header>
             <Header/>
         </header>
@@ -102,10 +109,16 @@ export default function Home(){
                 <div className='flex justify-center pb-2'>
                     <h1 className="font-oswald text-2xl uppercase border-b-2 border-orange-500 text-slate-900 dark:text-slate-100">Projetos</h1>
                 </div>
-                <div className="flex justify-center items-center m-2 mt-6 h-fit gap-x-10">
-                        <CardProject name="Projeto 03" tags={["NodeJS","ReactJS","TailwindCss"]} description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit alias corrupti quibusdam adipisci tenetur? Enim odio dignissimos in ipsum, consectetur eius, consequuntur doloribus magni sapiente totam aut. Corporis, itaque?" image="src/assets/GeradorXML.png"/>
-                        <CardProject name="Projeto 03" tags={["NodeJS","Java","MySql","Java"]} description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit alias corrupti quibusdam adipisci tenetur? Enim odio dignissimos in ipsum, consectetur eius, consequuntur doloribus magni sapiente totam aut. Corporis, itaque?" image="src/assets/GeradorXML.png"/>
-                        <CardProject name="Projeto 03" tags={["MongoDB","ReactJS","TailwindCss","TypeScript","Java"]} description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit alias corrupti quibusdam adipisci tenetur? Enim odio dignissimos in ipsum, consectetur eius, consequuntur doloribus magni sapiente totam aut. Corporis, itaque?" image="src/assets/GeradorXML.png"/>       
+                <div className="flex mx-12 mt-6 h-fit">
+                    <div className="flex-1 justify-center grid">
+                        <CardProject  name="Projeto 03" tags={["NodeJS","ReactJS","TailwindCss"]} description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit alias corrupti quibusdam adipisci tenetur? Enim odio dignissimos in ipsum, consectetur eius, consequuntur doloribus magni sapiente totam aut. Corporis, itaque?" image={imgProject}/>
+                    </div>
+                    <div className="flex-1 justify-center grid">
+                        <CardProject name="Projeto 03" tags={["NodeJS","Java","MySql","Java"]} description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit alias corrupti quibusdam adipisci tenetur? Enim odio dignissimos in ipsum, consectetur eius, consequuntur doloribus magni sapiente totam aut. Corporis, itaque?" image={imgProject}/>
+                    </div>
+                    <div className="flex-1 justify-center grid">
+                        <CardProject name="Projeto 03" tags={["MongoDB","ReactJS","TailwindCss","TypeScript","Java"]} description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit alias corrupti quibusdam adipisci tenetur? Enim odio dignissimos in ipsum, consectetur eius, consequuntur doloribus magni sapiente totam aut. Corporis, itaque?" image={imgProject}/>       
+                    </div>
                 </div>
             </div>
         </section>
