@@ -72,17 +72,17 @@ export default function Home(){
                     <Card icon={FaReact} name='ReactJS' content='ReactJS é uma biblioteca JavaScript de código aberto, desenvolvida pelo Facebook, utilizada principalmente para a construção de interfaces de usuário (UI). É uma das tecnologias mais populares no desenvolvimento de aplicações web. '/>
                     <Card icon={FaNodeJs} name='NodeJS' content='Node.js é um ambiente de execução JavaScript que permite a execução de código JavaScript no lado do servidor. Node.js é amplamente utilizado para criar aplicações de rede, como servidores web, APIs RESTful, e microserviços, devido à sua capacidade de lidar com operações assíncronas de maneira eficaz. '/>
                     <Card icon={SiMongodb} name='MongoDB' content='MongoDB é um banco de dados NoSQL orientado a documentos, conhecido por sua flexibilidade e escalabilidade. Uma das principais vantagens do MongoDB é sua capacidade de lidar com grandes volumes de dados de forma eficiente.'/>
-                    <Card icon={TbBrandMysql} name='MySQL' content='MySQL é um sistema de gerenciamento de banco de dados relacional (RDBMS) de código aberto que utiliza o modelo de dados baseado em tabelas, com suporte a SQL (Structured Query Language) para a manipulação e consulta de dados'/>
-                    <Card icon={LiaJava} name='Java' content='Java é uma linguagem de programação de propósito geral, orientada a objetos. Java é uma linguagem fortemente tipada e oferece um sistema de tipos rigoroso que ajuda a prevenir muitos erros comuns durante o desenvolvimento. Além disso, possui um robusto sistema de gerenciamento de memória'/>
-                    <Card icon={RiTailwindCssFill} name='Tailwind' content='Tailwind CSS é um framework de CSS utilitário que permite o desenvolvimento de interfaces web de forma rápida e eficiente. A ideia central do Tailwind é fornecer uma ampla gama de classes utilitárias que podem ser combinadas diretamente no HTML para aplicar estilos'/>
+                    <Card icon={TbBrandMysql} name='MySQL' content='MySQL é um sistema de gerenciamento de banco de dados relacional (RDBMS) de código aberto que utiliza o modelo de dados baseado em tabelas, com suporte a SQL (Structured Query Language) para a manipulação e consulta de dados.'/>
+                    <Card icon={LiaJava} name='Java' content='Java é uma linguagem de programação de propósito geral, orientada a objetos. Java é uma linguagem fortemente tipada e oferece um sistema de tipos rigoroso que ajuda a prevenir muitos erros comuns durante o desenvolvimento. Além disso, possui um robusto sistema de gerenciamento de memória.'/>
+                    <Card icon={RiTailwindCssFill} name='Tailwind' content='Tailwind CSS é um framework de CSS utilitário que permite o desenvolvimento de interfaces web de forma rápida e eficiente. A ideia central do Tailwind é fornecer uma ampla gama de classes utilitárias que podem ser combinadas diretamente no HTML para aplicar estilos.'/>
                     <Card icon={SiKnexdotjs}name='Knex' content='Knex.js é um construtor de consultas SQL para Node.js, projetado para facilitar a interação com bancos de dados relacionais. Uma das principais características do Knex é sua capacidade de suportar múltiplos bancos de dados relacionais, como PostgreSQL, MySQL, SQLite e Oracle.'/>
-                    <Card icon={RiNextjsFill}name='NextJS' content='Next.js é um framework de React para construção de aplicações web modernas, com foco em renderização do lado do servidor (SSR), geração de sites estáticos (SSG) e experiência do desenvolvedor. Uma das principais características do Next.js é o suporte nativo à renderização no lado do servidor. Isso significa que você pode gerar HTML no servidor a cada requisição'/>
+                    <Card icon={RiNextjsFill}name='NextJS' content='Next.js é um framework de React para construção de aplicações web modernas, com foco em renderização do lado do servidor (SSR), geração de sites estáticos (SSG) e experiência do desenvolvedor. Uma das principais características do Next.js é o suporte nativo à renderização no lado do servidor. Isso significa que você pode gerar HTML no servidor a cada requisição.'/>
                 </div>
             </div>
         </section>
-        <section id="experience/certificates" className="flex justify-center gap-x-12 items-center py-2 px-8 my-16">
-            <section id="experience" className="h-[fit] w-[25rem] grid grid-cols-3 rounded-xl place-items-start justify-items-center p-2  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50">
-                <div className="flex flex-col col-span-3 items-center justify-start space-y-2 w-full">
+        <section id="experience/certificates" className="flex justify-center gap-x-12 items-center py-2 px-8 my-16 ">
+            <section id="experience" className="h-[fit] w-[25rem] grid grid-cols-3 rounded-xl place-items-start justify-items-center p-2 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 bg-orange-200">
+                <div className="flex flex-col col-span-3 items-center justify-start space-y-2 w-full ">
                     <h1 className="text-xl font-semibold font-oswald gap-x-2 pl-2 py-[0.1rem] text-center dark:text-gray-100 border-b-2 border-orange-500 uppercase">Experiência</h1>  
                     
                 
@@ -104,11 +104,11 @@ export default function Home(){
                 </div>
             </section>
             <section id='certificates'>
-            <div className="flex flex-col w-fit rounded-xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50">
-                <div className="flex items-center justify-center rounded-t-xl bg-transparent h-[2.3rem] ">
+            <div className="flex flex-col w-fit rounded-xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 bg-orange-200" >
+                <div className="flex items-end justify-center rounded-t-xl bg-transparent h-[2.3rem] ">
                     <h1 className="text-xl font-semibold uppercase border-b-2 border-orange-500 font-oswald dark:text-gray-100">Certificados</h1>
                 </div>
-                <div className="flex flex-col p-4 w-fit rounded-b-lg gap-y-2 ">     
+                <div className="flex flex-col px-4 pb-4 pt-2 w-fit rounded-b-lg gap-y-2 ">     
                     <span className="font-oswald pr-6 flex items-center gap-x-2 justify-start bg-orange-100 rounded-md shadow-sm"><img src={logo_google} className="size-10"/>Build and Secure Networks in Google Cloud <span><a target="_blank" href="https://www.cloudskillsboost.google/public_profiles/1f778d86-b870-4f2f-a757-b98746ba7b0e/badges/2607372?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"><FaExternalLinkAlt size="12"/></a></span></span>
                     <span className="font-oswald pr-6 flex items-center gap-x-2 justify-start bg-orange-100 rounded-md shadow-sm"><img src={logo_google} className="size-10"/>Google Cloud Computing Foundations: Cloud Computing Fundamentals<span><a target="_blank" href="https://www.cloudskillsboost.google/public_profiles/1f778d86-b870-4f2f-a757-b98746ba7b0e/badges/2589022?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"><FaExternalLinkAlt size="12"/></a></span></span>
                     <span className="font-oswald pr-6 flex items-center gap-x-2 justify-start bg-orange-100 rounded-md shadow-sm"><img src={logo_google} className="size-10"/>Google Cloud Computinhg Foundations: Networking and security in Google Cloud<span><a target="_blank" href="https://www.cloudskillsboost.google/public_profiles/1f778d86-b870-4f2f-a757-b98746ba7b0e/badges/2607458?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"><FaExternalLinkAlt size="12"/></a></span></span>
@@ -123,11 +123,13 @@ export default function Home(){
                 <div className='flex justify-center pb-2'>
                     <h1 className="font-oswald text-2xl uppercase border-b-2 border-orange-500 text-slate-900 dark:text-slate-100">Projetos</h1>
                 </div>
-                <Link to="/projects" className="flex justify-end font-oswald text-md uppercase text-slate-900 dark:text-slate-100 p-1 mx-8 ">
-                    <span className="flex flex-row-reverse items-center hover:text-orange-700 border-orange-400">
-                        <span className="flex justify-end"><GoArrowUpRight size={22}/></span>Ver mais Projetos
-                    </span>
-                </Link>
+                <div className="flex items-end justify-end">
+                    <Link to="/projects" className="flex justify-end font-oswald text-md uppercase text-slate-900 dark:text-slate-100 p-1 mx-8 w-fit">
+                        <span className="flex flex-row-reverse items-center">
+                            <span className="flex justify-end"><GoArrowUpRight size={22}/></span>Ver mais Projetos
+                        </span>
+                    </Link>
+                </div>
                 <div className="flex mx-12 mt-6 h-fit overflow-x-hidden">
                     <div className="flex-1 justify-center grid">
                         <CardProject  name="Projeto 03" tags={["NodeJS","ReactJS","TailwindCss"]} description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit alias corrupti quibusdam adipisci tenetur? Enim odio dignissimos in ipsum, consectetur eius, consequuntur doloribus magni sapiente totam aut. Corporis, itaque?" image={imgProject}/>
