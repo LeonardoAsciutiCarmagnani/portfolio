@@ -14,7 +14,7 @@ export default function Card({ icon: Icon, content, name }: CardProps) {
                 <h3 className="font-semibold">{name}</h3>   
             </div>
             <div className="flex justify-center items-start p-2 text-center border-2 h-full bg-orange-100 rounded-b-lg ">
-                <h2 className="font-oswald text-xl text-[#171717]">{content}</h2>
+                <h2 className="font-oswald text-md text-[#171717]">{content}</h2>
             </div>
         </div>
     )
